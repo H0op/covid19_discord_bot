@@ -1,20 +1,35 @@
-Welcome to covid-19-discord's documentation!
-==========================================
+# Welcome to Covid-19-discord_bot's documentation!
 
-Using an API for covid-19 data and discord access to send us updates for COVID-19 cases
+Bot that sends us COVID-19 country specific data
 
-python
-discord account
-create a discord server
-add bot to discord server by oauth2 in https://discordapp.com/developers/applications -> create application -> bot -> add bot -> 
-give it atleast 207872 permission
+## Features
+- Sit back and relax - the coronavirus updates will come to you.
+- Get data straight to you discord chat
+- It's a reliable and live source of data
 
-get the bot token and place it in variable token= inside covid_19_discord.py
+## Installation
 
-invite the bot to your channel https://discordapp.com/api/oauth2/authorize?client_id=<ID_HERE>&permissions=207872&scope=bot
-# Replace ID_HERE with the client ID from developers/application
+You need:
 
-requirements to run:
+- Python
+- Discord account
+- Discord server
+- Created application on [Developer Portal](https://discordapp.com/developers/applications)
+- Added bot from the inside of the application in Bot section
+- Invite the bot to your channel with this link https://discordapp.com/api/oauth2/authorize?client_id=<ID_HERE>&permissions=207872&scope=bot (Replace ID_HERE with the client ID from developers/application)
+- Replace token= variable inside covid_19_discord.py with your token from Bot
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install:
+```bash
 pip install -U discord.py
-pip install pandas
 pip install requests
+```
+
+## Usage
+
+run covid_19_discord.py and the BOT goes online
+
+type in the discord chat !covid COUNTRY_NAME for the informations
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
